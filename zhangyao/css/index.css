@@ -1,0 +1,188 @@
+
+
+	/* 轮播图 */
+	#banner-left1,
+	#banner-right {
+		height: 29px;
+		width: 29px;
+		position: absolute;
+		top: -2px;
+		border-radius: 50%;
+	}
+
+	#banner-left1 {
+		background: url(../img/prev_jiantou.png);
+
+	}
+
+	#banner-left1:hover {
+		background: url(../img/prev_jiantou_hover.png);
+		animation: move 1s ease 1 alternate;
+	}
+
+	#banner-right {
+		right: 0;
+		background: url(../img/next_jiantou.png);
+
+	}
+
+	#banner-right:hover {
+		background: url(../img/next_jiantou_hover.png);
+		animation: move 1s ease 1 alternate;
+	}
+
+	#zhishi {
+		height: 14px;
+		width: 40px;
+		position: absolute;
+		left: 50%;
+		top: 5px;
+		margin-left: -20px;
+		background: url(../img/next&prev_mbg02.png);
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#zhishi .next {
+		width: 6px;
+		height: 14px;
+		background: url(../img/next&prev_mbg01.png);
+		position: absolute;
+		left: -6px;
+	}
+
+	#zhishi .prev {
+		width: 6px;
+		height: 14px;
+		background: url(../img/next&prev_mbg03.png);
+		position: absolute;
+		right: -6px;
+	}
+
+	#zhishi li {
+
+		width: 6px;
+		height: 6px;
+		margin-top: 4px;
+		background: url(../img/next&prev_others.png);
+	}
+
+	#zhishi .zhis {
+		background: url(../img/next&prev_now.png);
+	}
+
+.py1,.py2{
+	position: relative;
+}
+
+/*地图*/
+.the_map{
+	position:relative;
+}
+.map_topimg{
+	width:1100px;
+	position:relative;
+	margin:0 auto;
+	z-index:999;
+}
+.map_topimg img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+/* .map_bottomimg{
+	background:url(../img/map_bottomimg.png) top center no-repeat;
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:33px;
+	width:100%;
+	min-width:1100px;
+	background-color:transparent;
+} */
+.all_map_baidu{
+	height: 660px;
+	overflow: hidden;
+	min-width:1100px;
+	margin: 0;
+	font-family: "宋体";
+}
+
+
+
+
+
+	/* 动画 */
+	@keyframes move {
+		0% {
+			transform: scale(1, 0.8);
+		}
+
+		25% {
+			transform: scale(0.8, 1);
+		}
+
+		50% {
+			transform: scale(1, 0.9);
+		}
+
+		75% {
+			transform: scale(0.9, 1);
+		}
+
+		100% {
+			transform: scale(1, 1);
+		}
+	}
+
+#business  .business-bg:hover{
+	animation: animo 2s ease 1 ;
+}
+#business .business-icon:hover{
+	animation: animo 2s ease 1 ;
+}
+@keyframes animo{
+	0%{
+		
+		transform:scale(1.1,1.1) rotateZ(15deg);
+	}
+	10%{
+		transform:scale(1.1,1.1) rotateZ(-10deg);
+	}
+	20%{
+		transform:scale(1.1,1.1) rotateZ(15deg);
+	}
+	30%{
+		transform:scale(1.1,1.1) rotateZ(12deg);
+	}
+	40%{
+		transform:scale(1.1,1.1) rotateZ(-8deg);
+	}
+	50%{
+		transform:scale(1.1,1.1) rotateZ(12deg);
+	}
+	60%{
+		transform:scale(1,1) rotateZ(-6deg);
+	}
+	70%{
+		transform:scale(1,1) rotateZ(8deg);
+	}
+	80%{
+		transform:scale(1,1) rotateZ(6deg);
+	}
+	90%{
+		transform:scale(1,1) rotateZ(-2deg);
+	}
+	100%{
+		transform:scale(1,1) rotateZ(00deg);
+	}
+	
+}
+
+/* .introduce-one>.introduce-5>ul>li{
+	width: 47px;
+	height: 47px;
+	background-color: red;
+	background: url(../img/team_contact.png) no-repeat;
+	
+} */
